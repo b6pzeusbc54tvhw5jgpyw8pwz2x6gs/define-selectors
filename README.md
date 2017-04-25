@@ -5,6 +5,11 @@
 
 **define-selectors** is a solution to [this stackoverflow problem][question]. It works based on [Reselect][Reselect] and [Re-reselect][reReselect].
 
+## Installation
+```
+$ npm install define-selectors
+```
+
 ## Comparison with reselect
 
 reselect:
@@ -58,10 +63,14 @@ const { someSelector } = defineSelectors({
 ```js
 import defineSelectors from 'define-selectors'
 
+const selectNav = state => state.nav
+const selectPage = state => state.page
+const selectFoo = state => state.foo
+
 const { selectNavAndPageAndFoo, selectNavAndPage } = defineSelectors({
 
   selectNavAndPageAndFoo: [
-    [ 'selectNavAndPage', selectFoo ],
+    [ 'selectNavAndPage', selectFoo ],      // Note! 'selectNavAndPage' must be string type!
     (navAndPage, foo) => {
       return `${navAndPage}/${foo}`
     },
