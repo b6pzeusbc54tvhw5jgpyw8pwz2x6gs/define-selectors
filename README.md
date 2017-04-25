@@ -1,4 +1,7 @@
 # define-selectors
+[![Travis][build-badge]][build]
+[![npm package][npm-badge]][npm]
+[![Coveralls][coveralls-badge]][coveralls]
 
 **define-selectors** is a solution to [this stackoverflow problem][question]. It works based on [Reselect][Reselect] and [Re-reselect][reReselect].
 
@@ -132,3 +135,12 @@ Happy to PR any of the improvements you're thinking about. Thanks!
 [reReselect]: https://github.com/toomuchdesign/re-reselect
 [question]: http://stackoverflow.com/questions/43288495/how-to-ignore-ordering-of-reselect-selectors-when-composing-selectors
 [myPR]: https://github.com/reactjs/reselect/pull/210
+
+[build-badge]: https://img.shields.io/travis/b6pzeusbc54tvhw5jgpyw8pwz2x6gs/define-selectors/master.svg?style=flat-square
+[build]: https://travis-ci.org/b6pzeusbc54tvhw5jgpyw8pwz2x6gs/define-selectors
+
+[npm-badge]: https://img.shields.io/npm/v/define-selectors.svg?style=flat-square
+[npm]: https://www.npmjs.org/package/define-selectors
+
+[coveralls-badge]: https://img.shields.io/coveralls/b6pzeusbc54tvhw5jgpyw8pwz2x6gs/define-selectors/master.svg?style=flat-square
+[coveralls]: https://coveralls.io/github/b6pzeusbc54tvhw5jgpyw8pwz2x6gs/define-selectors
