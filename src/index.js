@@ -1,6 +1,6 @@
 import { createSelector as defaultCreateSelector, createSelectorCreator } from 'reselect'
 import createCachedSelector from 're-reselect'
-import memoizeWithCacheSize from './lib/memoizeWithCacheSize'
+import memoizeWithCacheSize from './memoizeWithCacheSize'
 
 const shallowEqual = (a, b) => a === b
 const nativeIsArray = Array.isArray

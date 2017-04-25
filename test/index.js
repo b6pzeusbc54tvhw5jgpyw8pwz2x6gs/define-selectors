@@ -1,6 +1,6 @@
 //import _ from 'underscore'
 import { expect } from 'chai'
-import defineSelectors from '../'
+import defineSelectors from '../src/index'
 
 export const selectNav = state => state.nav
 export const selectPage = state => state.page

@@ -9,6 +9,7 @@ script:
   - npm run lint
   - npm test
   - npm run test:cov
+  - npm run compile:commonjs
 
 after_success:
   - cat ./coverage/lcov.info | ./node_modules/codecov.io/bin/codecov.io.js
