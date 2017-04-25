@@ -4,7 +4,8 @@
   "description": "to define selectors ignoring order",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --require babel-polyfill --compilers js:babel-register"
+    "test": "mocha --require babel-polyfill --compilers js:babel-register",
+    "eslint": "eslint -c .eslintrc.js --no-eslintrc --max-warnings 0 ./"
   },
   "repository": {
     "type": "git",
@@ -20,15 +21,18 @@
   },
   "homepage": "https://github.com/b6pzeusbc54tvhw5jgpyw8pwz2x6gs/define-reselect#readme",
   "devDependencies": {
-    "babel-eslint": "^7.2.3",
+    "babel-eslint": "6",
     "babel-polyfill": "^6.23.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "babel-register": "^6.24.1",
     "chai": "^3.5.0",
+    "eslint": "^3.19.0",
+    "eslint-plugin-import": "^2.2.0",
     "mocha": "^3.3.0"
   },
   "dependencies": {
+    "re-reselect": "^0.4.0",
     "reselect": "^3.0.0"
   }
 }
