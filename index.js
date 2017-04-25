@@ -5,7 +5,8 @@ import memoizeWithCacheSize from './lib/memoizeWithCacheSize'
 const shallowEqual = (a, b) => a === b
 const nativeIsArray = Array.isArray
 const toString = Object.prototype.toString
-const isArray = nativeIsArray || ((o) => toString.call(o) === '[object Array]')
+const isArray = nativeIsArray ||
+  ((o) => toString.call(o) === '[object Array]')
 
 const defineSelector = ( key, selectors, definedSelectors ) => {
   if( definedSelectors[ key ] === 'ing' ) {
