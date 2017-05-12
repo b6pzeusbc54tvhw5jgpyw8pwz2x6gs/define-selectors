@@ -1,6 +1,6 @@
 {
   "name": "define-selectors",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "to define selectors ignoring order",
   "main": "lib/index.js",
   "files": [
@@ -8,8 +8,9 @@
   ],
   "scripts": {
     "clean": "rimraf lib",
-    "test": "mocha --require babel-polyfill --compilers js:babel-register",
     "lint": "eslint -c .eslintrc.js --no-eslintrc --max-warnings 0 ./",
+    "test": "mocha --require babel-polyfill --compilers js:babel-register",
+    "test:watch": "node_modules/.bin/nodemon --exec 'node_modules/.bin/mocha --require babel-polyfill --compilers js:babel-register || exit 1'",
     "test:cov": "better-npm-run test:cov",
     "compile:commonjs": "better-npm-run compile:commonjs",
     "prepublish": "npm run clean && npm run compile:commonjs"
@@ -31,7 +32,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/b6pzeusbc54tvhw5jgpyw8pwz2x6gs/define-reselect.git"
+    "url": "git+https://github.com/b6pzeusbc54tvhw5jgpyw8pwz2x6gs/define-selectors.git"
   },
   "keywords": [
     "reselect",
@@ -44,9 +45,9 @@
   "author": "Alfred UC <b6pzeusbc54tvhw5jgpyw8pwz2x6gs@gmail.com> (https://github.com/b6pzeusbc54tvhw5jgpyw8pwz2x6gs)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/b6pzeusbc54tvhw5jgpyw8pwz2x6gs/define-reselect/issues"
+    "url": "https://github.com/b6pzeusbc54tvhw5jgpyw8pwz2x6gs/define-selectors/issues"
   },
-  "homepage": "https://github.com/b6pzeusbc54tvhw5jgpyw8pwz2x6gs/define-reselect#readme",
+  "homepage": "https://github.com/b6pzeusbc54tvhw5jgpyw8pwz2x6gs/define-selectors#readme",
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-eslint": "6",
@@ -62,6 +63,7 @@
     "eslint": "^3.19.0",
     "eslint-plugin-import": "^2.2.0",
     "mocha": "^3.3.0",
+    "nodemon": "^1.11.0",
     "nyc": "^10.2.0",
     "rimraf": "^2.6.1"
   },
